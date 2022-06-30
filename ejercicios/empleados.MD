@@ -6,52 +6,62 @@
 
 1. Lista el primer apellido de todos los empleados.
     ```sql
-
+    SELECT apellido1
+    FROM empleado
     ```
 
 2. Lista el primer apellido de los empleados eliminando los apellidos que estén repetidos.
     ```sql
-
+    SELECT DISTINCT apellido1
+    FROM empleado
     ```
 
 3. Lista todas las columnas de la tabla empleado.
     ```sql
-
+    SELECT *
+    FROM empleado
     ```
 
 4. Lista el nombre y los apellidos de todos los empleados.
     ```sql
-
+    SELECT nombre, apellido1, apellido2
+    FROM empleado
     ```
 
 5. Lista el código de los departamentos de los empleados que aparecen en la tabla empleado.
     ```sql
-
+    SELECT codigo_departamento
+    FROM empleado
     ```
 
 6. Lista el código de los departamentos de los empleados que aparecen en la tabla empleado, eliminando los códigos que aparecen repetidos.
     ```sql
-
+    SELECT DISTINCT codigo_departamento
+    FROM empleado
     ```
 
 7. Lista el nombre y apellidos de los empleados en una única columna.
     ```sql
-
+    SELECT CONCAT(nombre, ' ', apellido1, ' ', IFNULL(apellido2,'')) AS 'Nombre Completo'
+    FROM empleado
     ```
 
 8. Lista el nombre y apellidos de los empleados en una única columna, convirtiendo todos los caracteres en mayúscula.
     ```sql
-
+    SELECT UPPER(CONCAT(nombre, ' ', apellido1, ' ', IFNULL(apellido2,''))) AS 'Nombre Completo'
+    FROM empleado
     ```
 
 9. Lista el nombre y apellidos de los empleados en una única columna, convirtiendo todos los caracteres en minúscula.
     ```sql
-
+    SELECT LOWER(CONCAT(nombre, ' ', apellido1, ' ', IFNULL(apellido2,''))) AS 'Nombre Completo'
+    FROM empleado
     ```
 
 10. Lista el código de los empleados junto al nif, pero el nif deberá aparecer en dos columnas, una mostrará únicamente los dígitos del nif y la otra la letra.
     ```sql
-
+    SELECT e.codigo, LEFT(e.nif, LENGTH(e.nif-1)) AS 'Dígitos', RIGHT(e.nif, 1) AS 'Letra'
+    FROM empleado e
     ```
 
 11. Lista el nombre de cada departamento y el valor del presupuesto actual del que dispone. Para calcular este dato tendrá que restar al valor del presupuesto inicial (columna presupuesto) los gastos que se han generado (columna gastos). Tenga en cuenta que en algunos casos pueden existir valores negativos. Utilice un alias apropiado para la nueva columna columna que está calculando.
