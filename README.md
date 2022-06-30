@@ -22,22 +22,22 @@ La misma cuenta con múltiples bases de datos y ejercicios.
 
 [![DER Gestión Empleados](/images/der/der-gestion-empleados.png)]()
 
-<a href="/ejercicios/informatica.MD">Ir a los ejercicios de Gestión de Empleados</a>
+<a href="/ejercicios/empleados.MD">Ir a los ejercicios de Gestión de Empleados</a>
 
 ### Base de datos N° 3 - Gestión de ventas
 
-[![DER Gestión Empleados](/images/der/der-gestion-ventas.png)]()
+[![DER Gestión Ventas](/images/der/der-gestion-ventas.png)]()
 
-<a href="/ejercicios/informatica.MD">Ir a los ejercicios de Gestión de Ventas</a>
+<a href="/ejercicios/ventas.MD">Ir a los ejercicios de Gestión de Ventas</a>
 
 ### Base de datos N° 4 - Jardinería
 
-[![DER Gestión Empleados](/images/der/der-jardineria.png)]()
+[![DER Jardinería](/images/der/der-jardineria.png)]()
 
-<a href="/ejercicios/informatica.MD">Ir a los ejercicios de Jardinería</a>
+<a href="/ejercicios/jardineria.MD">Ir a los ejercicios de Jardinería</a>
 
 ### Base de datos N° 5 - Universidad
 
 [![DER Universidad](/images/der/der-universidad.png)]()
 
-<a href="/ejercicios/informatica.MD">Ir a los ejercicios de Universidad</a>
+<a href="/ejercicios/universidad.MD">Ir a los ejercicios de Universidad</a>

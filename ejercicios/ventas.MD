@@ -1,4 +1,4 @@
-# Ejercicios - Tienda informática
+# Ejercicios - Gestión de Ventas
 
 [![DER Gestión Ventas](/images/der/der-gestion-ventas.png)]()
 
