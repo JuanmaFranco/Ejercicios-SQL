@@ -6,27 +6,37 @@
 
 1. Devuelve un listado con el primer apellido, segundo apellido y el nombre de todos los alumnos. El listado deberá estar ordenado alfabéticamente de menor a mayor por el primer apellido, segundo apellido y nombre.
     ```sql
-
+    SELECT a.apellido1, a.apellido2, a.nombre
+    FROM alumno a
+    ORDER BY 1, 2, 3 ASC
     ```
 
 2. Averigua el nombre y los dos apellidos de los alumnos que no han dado de alta su número de teléfono en la base de datos.
     ```sql
-
+    SELECT a.nombre, a.apellido1, a.apellido2
+    FROM alumno a
+    WHERE a.telefono IS NULL
     ```
 
 3. Devuelve el listado de los alumnos que nacieron en 1999.
     ```sql
-
+    SELECT *
+    FROM alumno a
+    WHERE YEAR(a.fecha_nacimiento) = '1999'
     ```
 
 4. Devuelve el listado de profesores que no han dado de alta su número de teléfono en la base de datos y además su nif termina en K.
     ```sql
-
+    SELECT *
+    FROM profesor p 
+    WHERE p.telefono IS NULL AND p.nif LIKE '%K'
     ```
 
 5. Devuelve el listado de las asignaturas que se imparten en el primer cuatrimestre, en el tercer curso del grado que tiene el identificador 7.
     ```sql
-
+    SELECT *
+    FROM asignatura a
+    WHERE a.cuatrimestre = 1 AND a.curso = 3 AND a.id_grado = 7
     ```
 
 ## <span style="color:aqua">Consultas multitabla (Composición interna)<span>
